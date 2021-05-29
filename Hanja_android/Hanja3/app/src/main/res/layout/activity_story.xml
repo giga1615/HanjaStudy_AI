@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/story_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/story1"
+    tools:context="com.creativeAI.jisun.hanja.StoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/story1"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="156dp"
+            android:background="#77000000"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="168dp" />
+
+        <ImageView
+            android:id="@+id/story2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/story3"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="53dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/story4"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="240dp" />
+
+        <ImageView
+            android:id="@+id/story3"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:visibility="visible"
+            app:srcCompat="@drawable/story5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="10dp"
+        android:layout_margin="12dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/story_next"
+            android:layout_width="24dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/storynext" />
+
+        <ImageView
+            android:id="@+id/story_back"
+            android:layout_width="24dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/storyback" />
+
+        <ImageView
+            android:id="@+id/skip_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/story_next"
+            android:layout_marginStart="-28dp"
+            app:srcCompat="@drawable/skipbtn" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/story_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="156dp"
+                app:srcCompat="@drawable/story2" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/story4"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="24dp"
+            app:srcCompat="@drawable/story9" />
+
+        <ImageView
+            android:id="@+id/story44"
+            android:layout_width="200dp"
+            android:layout_height="220dp"
+            android:layout_above="@+id/speech"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/story8" />
+
+        <ImageView
+            android:id="@+id/story5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/story44"
+
+            android:visibility="invisible"
+            app:srcCompat="@drawable/story12" />
+
+        <ImageView
+            android:id="@+id/speech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/story10" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/go_to_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BB000000"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="337dp"
+            android:layout_height="127dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="197dp"
+            app:srcCompat="@drawable/go_to_main_msg" />
+
+        <TextView
+            android:id="@+id/touchMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="194dp"
+            android:text="화면을 터치하세요."
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

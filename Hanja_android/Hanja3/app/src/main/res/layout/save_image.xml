@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/study_success"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="209dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/w8" />
+
+
+        <ImageView
+            android:id="@+id/window_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignEnd="@+id/window_close2"
+            android:layout_alignTop="@+id/study_success"
+            android:layout_marginTop="22dp"
+            app:srcCompat="@drawable/c3" />
+
+        <TextView
+            android:id="@+id/explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/window_title2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/save_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="305dp"
+            android:inputType="none" />
+
+        <ImageView
+            android:id="@+id/yes_button"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/save_img"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="30dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/w13" />
+
+        <ImageView
+            android:id="@+id/no_button"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/yes_button"
+            android:layout_marginStart="57dp"
+            android:layout_toEndOf="@+id/yes_button"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/w14" />
+
+        <ImageView
+            android:id="@+id/ok_button"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/no_button"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/c5" />
+    </RelativeLayout>
+
+</RelativeLayout>

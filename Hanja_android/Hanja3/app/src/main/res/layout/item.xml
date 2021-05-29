@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation = "vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:id="@+id/linearItem"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/m11" />
+</LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lock"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imageView42"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="120dp"
+            app:srcCompat="@drawable/m23" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/odd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/odd_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="136dp"
+            android:layout_marginStart="110dp"
+            android:gravity="right"
+            android:text="0/10"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/even_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/even_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="102dp"
+            android:layout_marginTop="136dp"
+            android:gravity="right"
+            android:text="0/10"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

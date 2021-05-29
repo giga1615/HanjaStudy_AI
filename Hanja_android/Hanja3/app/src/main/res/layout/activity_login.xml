@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/l1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/l2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_marginTop="95dp"
+            app:srcCompat="@drawable/l3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView3"
+            app:srcCompat="@drawable/l5" />
+
+        <ImageView
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView6"
+            app:srcCompat="@drawable/start_btn" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView4"
+            app:srcCompat="@drawable/l5" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/auto_login"
+            android:layout_marginTop="72dp"
+            app:srcCompat="@drawable/l4" />
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="시 작 하 기"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView6"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="9dp"
+            android:ems="10"
+            android:hint="이메일"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_color_secondary_3"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/login_btn"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_color_secondary_3"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/auto_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/login_btn"
+            android:buttonTint="@color/text_color_secondary_3"
+            android:text="자동로그인"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/find_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/auto_login"
+            android:text="비밀번호찾기"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/goto_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="아직 회원이 아니신가요? "
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

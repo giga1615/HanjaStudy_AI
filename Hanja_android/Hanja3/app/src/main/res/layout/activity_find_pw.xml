@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.creativeAI.jisun.hanja.FindPWActivity">
+
+    <RelativeLayout
+        android:id="@+id/setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/top_toolbar" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/birth_layout"
+            android:layout_marginTop="6dp"
+            app:srcCompat="@drawable/j5" />
+
+        <EditText
+            android:id="@+id/name3"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView5"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="이름"
+            android:inputType="textPersonName"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView9"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="이메일주소"
+            android:inputType="textPersonName"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="9dp"
+            app:srcCompat="@drawable/j4" />
+
+        <RelativeLayout
+            android:id="@+id/birth_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView5">
+
+            <Spinner
+                android:id="@+id/year4"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/imageView8"
+                android:layout_alignTop="@+id/year" />
+
+            <Spinner
+                android:id="@+id/year5"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/year" />
+
+            <Spinner
+                android:id="@+id/year6"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/month" />
+
+            <TextView
+                android:id="@+id/birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:text="생년월일"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/imageView8"
+                android:text="년"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toEndOf="@+id/imageView12"
+                android:text="월"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView15"
+                android:text="일"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="91dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/birth"
+                app:srcCompat="@drawable/j6" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/year"
+                app:srcCompat="@drawable/j7" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/month"
+                app:srcCompat="@drawable/j7" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/email"
+            android:layout_marginTop="52dp"
+            app:srcCompat="@drawable/start_btn" />
+
+        <TextView
+            android:id="@+id/ok_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ok"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="19dp"
+            android:text="확 인"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ok"
+            android:textSize="15dp"
+            android:text="* 가입시 입력한 이메일주소로 임시 비밀번호가 발급됩니다.
+            \n&#160;&#160;&#160;로그인 후, 반드시 비밀번호를 변경하시기 바랍니다." />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

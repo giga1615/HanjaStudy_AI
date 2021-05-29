@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/back1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/w1" />
+
+        <ImageView
+            android:id="@+id/window_close"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="81dp"
+            app:srcCompat="@drawable/w2" />
+
+        <ImageView
+            android:id="@+id/window_title"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/window_close"
+            android:layout_marginTop="51dp"
+            app:srcCompat="@drawable/w5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="200dp"
+            android:layout_marginLeft="57dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginTop="195dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/friend_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="114dp">
+
+        <ImageView
+            android:id="@+id/make_button"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="70dp"
+            app:srcCompat="@drawable/w6" />
+
+        <ImageView
+            android:id="@+id/invite_button"
+            android:layout_width="100dp"
+            android:layout_height="52dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="23dp"
+            android:layout_marginRight="70dp"
+            app:srcCompat="@drawable/w7" />
+    </RelativeLayout>
+
+</RelativeLayout>

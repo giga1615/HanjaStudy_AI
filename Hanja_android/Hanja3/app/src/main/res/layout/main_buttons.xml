@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.creativeAI.jisun.hanja.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/imageView28"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@drawable/m10" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="95dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/imageView28"
+            app:srcCompat="@drawable/m9" />
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="98dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView29"
+            app:srcCompat="@drawable/m8" />
+
+        <ImageView
+            android:id="@+id/my_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/m7" />
+
+        <RelativeLayout
+            android:layout_width="88dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="187dp">
+
+            <TextView
+                android:id="@+id/theme_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/purple"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="72dp"
+            android:layout_height="29dp">
+
+            <TextView
+                android:id="@+id/coin_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/purple"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="88dp"
+            android:layout_height="29dp"
+            android:layout_marginLeft="84dp">
+
+            <TextView
+                android:id="@+id/hanja_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/purple"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="543dp">
+
+        <ImageView
+            android:id="@+id/setting_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/m2" />
+
+        <ImageView
+            android:id="@+id/ranking_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/setting_button"
+            app:srcCompat="@drawable/m3" />
+
+        <ImageView
+            android:id="@+id/tutorial_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@drawable/m6" />
+
+        <ImageView
+            android:id="@+id/friend_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/tutorial_button"
+            app:srcCompat="@drawable/m5" />
+
+        <ImageView
+            android:id="@+id/quiz_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/m4" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imageView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tu1" />
+
+        <ImageView
+            android:id="@+id/tutorial_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/w2" />
+    </RelativeLayout>
+
+</RelativeLayout>

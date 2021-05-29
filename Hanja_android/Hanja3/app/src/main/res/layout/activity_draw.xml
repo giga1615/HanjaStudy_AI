@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawActivity">
+
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/hanja"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include layout="@layout/top_toolbar" />
+
+        <LinearLayout
+            android:id="@+id/llMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/btnRED"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/red" />
+
+            <ImageView
+                android:id="@+id/btnBLUE"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/blue" />
+
+            <ImageView
+                android:id="@+id/btnGREEN"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/green" />
+
+            <ImageView
+                android:id="@+id/btnWHITE"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/white" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCanvas"
+            android:layout_width="match_parent"
+            android:layout_height="425dp"
+            android:layout_weight="1"
+            android:background="#88000000"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/clean_button"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="118dp"
+        app:srcCompat="@drawable/eraser" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/recapture_button"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="71dp"
+            android:background="@drawable/c1" />
+
+
+        <ImageView
+            android:id="@+id/save_button"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="71dp"
+            android:background="@drawable/c2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/save_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible">
+
+        <include
+            layout="@layout/save_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

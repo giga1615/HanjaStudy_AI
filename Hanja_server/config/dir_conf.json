@@ -1,0 +1,12 @@
+{
+    "local" : {
+        "img_url" : "",
+        "img_dir" : "D:/Dev/js/Hanja/upload/",
+        "google_vision_json_dir" : "D:/Dev/js/Hanja/config/My First Project-d230a8d9a846.json"
+    },
+    "real" : {
+        "img_url" : "",
+        "img_dir" : "D:/nginx-rtmp-win32-master/www/learning/",
+        "google_vision_json_dir" : "D:/membership/hanja/config/My First Project-d230a8d9a846.json"
+    }
+}
