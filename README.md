@@ -5,3 +5,6 @@
 
 * 홍보 영상
 https://user-images.githubusercontent.com/45623764/135392847-33b2cb27-e633-43ce-9e2d-228f2821f1da.mp4
+
+* 홍보 팸플릿
+![팸플릿2-02](https://user-images.githubusercontent.com/45623764/135393553-ffda201c-ca9f-4263-8549-7f6893796cfd.png)
